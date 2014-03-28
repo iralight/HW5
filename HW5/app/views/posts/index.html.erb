@@ -1,0 +1,8 @@
+<h3>
+<div>These are all the posts for <%=@user.fname%> <%=@user.lname%>: </h1>
+<% @user.posts.each do|post| %>
+<div>
+<%=post.name%> (<%=post.description%>)
+</div>
+<% end %>
+</h3>
